@@ -18,14 +18,12 @@
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="nstyled">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="{{ route('register') }}">Add new Admin</a></li>
 
             @if (Auth::user() == null)
 
                 <form class="navbar-form navbar-right" role="search">
                     <a href="{{ route('login') }}">login</a>
-                    <a href="{{ route('register') }}">Register</a>
                 </form>
             @else
                 <div class="user">{{ auth()->user()->name }}</div>

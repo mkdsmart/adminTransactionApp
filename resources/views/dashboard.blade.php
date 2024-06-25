@@ -68,9 +68,12 @@
         <ul>
             <li><a href="#">Dashboard</a></li>
             <li><a href="{{ route('transactiontable') }}">Transactions</a></li>
-            <li><a href="#">Users</a></li>
+            <li><a href="{{ route('viewclient') }}">Users</a></li>
+            <li><a href="{{ route('addmember') }}">Add new admin</a></li>
             <li><a href="#">Settings</a></li>
+            <li> {{ auth()->user()->name }} </li>
         </ul>
+
     </nav>
 </header>
 
